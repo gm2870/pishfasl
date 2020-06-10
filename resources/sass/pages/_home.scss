@@ -1,0 +1,58 @@
+header {
+    height: 20%;
+}
+.navbar-brand {
+    margin-left: 3rem;
+}
+.header-nav-link {
+    color: $primary-black;
+    font-size: 14px;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
+
+    &:hover {
+        color: $primary-blue;
+    }
+}
+.login-btn {
+    background-color: $white;
+    &:hover {
+        background-color: $primary-blue;
+        color: $white;
+    }
+
+    color: $primary-blue;
+}
+.login-btn,
+.signup-btn {
+    padding: 7px 17px;
+    margin-left: 10px;
+    border: 3px solid $primary-blue;
+    font-weight: bold;
+}
+.signup-btn {
+    background-color: $primary-blue;
+    color: $white;
+    &:hover {
+        color: $white;
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 80%;
+}
+img {
+    max-width: 100%;
+}
+.swiper-wrapper {
+    position: relative;
+}
+.swiper-slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
