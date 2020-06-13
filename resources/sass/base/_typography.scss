@@ -9,3 +9,17 @@ a {
 .button {
     border-radius: 4rem;
 }
+.btn-main {
+    background-color: $primary-yellow;
+    padding: 1.5rem 3rem;
+    color:$primary-black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 4rem;
+    border-color: $primary-yellow;
+    box-shadow: 0 0 2px;
+    &:hover {
+        background-color: goldenrod;
+
+    }
+}

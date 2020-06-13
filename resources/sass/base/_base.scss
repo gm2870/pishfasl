@@ -19,6 +19,7 @@ html {
 }
 body {
     box-sizing: border-box;
+    background-color: #f7f7f7;
     @include respond(tab-port) {
         padding: 0;
     }
@@ -36,4 +37,7 @@ body {
         url("../../public/font/woff/IRANSansWeb_Light.woff") format("woff"),
         url("../../public/font/woff/IRANSansWeb_Medium.woff") format("woff"),
         url("../../public/font/woff/IRANSansWeb_Bold.woff") format("woff");
+}
+.container {
+    max-width: 1300px;
 }

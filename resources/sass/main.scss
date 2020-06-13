@@ -3,8 +3,11 @@
 @import "./base/animations";
 @import "./base/mixins";
 @import "./base/base";
-
-@import "./base/typography";
 @import "./base/utilities";
 @import "./base/variables";
+@import "./base/typography";
 @import "./pages/home";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./components/mobile-menu";
+@import "./components/story";
