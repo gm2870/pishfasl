@@ -1,88 +1,88 @@
 header {
-  background-color: $white;
+    background-color: $white;
 }
 #header-navbar {
-  @media only screen and (max-width: 1199.98px){
-    direction: ltr !important;
-  }
+    @media only screen and (max-width: 1199.98px) {
+        direction: ltr !important;
+    }
 }
 .navbar-brand {
-  margin-right: 0;
+    margin-right: 0;
 }
 .header-nav-link {
-  color: $primary-black;
-  font-size: 14px;
-  padding-right: 1.2rem !important;
-  padding-left: 1.2rem !important;
+    color: $primary-black;
+    font-size: 14px;
+    padding-right: 1.2rem !important;
+    padding-left: 1.2rem !important;
 
-  &:hover {
-    color: $primary-blue;
-  }
+    &:hover {
+        color: $primary-blue;
+    }
 }
 .login-btn {
-  background-color: $white;
-  &:hover {
-    background-color: $primary-blue;
-    color: $white;
-  }
+    background-color: $white;
+    &:hover {
+        background-color: $primary-blue;
+        color: $white;
+    }
 
-  color: $primary-blue;
+    color: $primary-blue;
 }
 .login-btn,
 .signup-btn {
-  padding: 0.7rem 2rem;
-  margin-left: 1rem;
-  border: 3.1px solid $primary-blue;
-  font-weight: bold;
+    padding: 0.7rem 2rem;
+    margin-left: 1rem;
+    border: 3.1px solid $primary-blue;
+    font-weight: bold;
 }
 .signup-btn {
-  background-color: $primary-blue;
-  color: $white;
-  &:hover {
+    background-color: $primary-blue;
     color: $white;
-  }
-}
-.navbar-toggler{
-  padding:1.3rem;
-  border-radius: 50%;
-  width: 6rem;
-  height: 6rem;
-  margin-top: 1rem;
-
-  & *{
-    pointer-events: none;
-  }
-  @include respond(xs){
-    width: 5rem;
-    height: 5rem;
-  }
-}
-.navbar-toggler-icon{
-  position: relative;
-  // margin-top: 3.5rem;
-  &,
-  &::before,
-  &::after{
-    display: inline-block;
-    width: 3.5rem;
-    height: 2.5px;
-    background-color: #000;
-
-    @include respond(xs){
-      width: 2.5rem;
+    &:hover {
+        color: $white;
     }
-  }
-  &::before,
-  &::after{
-    content:"";
-    position: absolute;
-    left: -1px;
-    transition: all 0.2s;
-  }
-  &::before{
-    top:-1rem;
-  }
-  &::after{
-    top:1rem;
-  }
+}
+.navbar-toggler {
+    padding: 1.3rem;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+
+    & * {
+        pointer-events: none;
+    }
+    @include respond(xs) {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+.navbar-toggler-icon {
+    position: relative;
+    // margin-top: 3.5rem;
+    &,
+    &::before,
+    &::after {
+        display: inline-block;
+        width: 3.5rem;
+        height: 2.5px;
+        background-color: #000;
+
+        @include respond(xs) {
+            width: 2.5rem;
+        }
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+    }
+    &::before {
+        top: -1rem;
+    }
+    &::after {
+        top: 1rem;
+    }
 }
