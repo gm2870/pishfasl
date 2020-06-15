@@ -1,103 +1,98 @@
 .story {
-  width: 75%;
-  margin: 0 auto;
-  box-shadow: 0 3rem 6rem rgba($primary-black , 0.1);
-  background-color: rgba(255,255,255,0.6);
-  border-radius: 3px;
-  padding: 4rem 7rem;
-  padding-left: 9rem;
-  font-size: 13px;
-  transform: skewX(-12deg);
-  @media only screen and (max-width: 767.98px) {
-    width: 95%;
-    padding-left: 5rem;
-    transform: skewX(0);
-
-  }
-
-  &__shape {
-    width: 15rem;
-    height: 15rem;
-    float: right;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    transform: translateX(3rem) skewX(12deg);
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
-      clip-path: circle(50% at 50% 50%);
-      -webkit-clip-path:circle(50% at 50% 50%);
-      //border-radius:none;
-    }
-    @include respond(phone){
-      transform:translateX(-3rem) skewX(0);
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($primary-black, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    padding: 3rem 5rem;
+    font-size: 13px;
+    transform: skewX(-12deg);
+    @media only screen and (max-width: 767.98px) {
+        width: 95%;
+        padding-left: 5rem;
+        transform: skewX(0);
     }
 
-  }
-  &__img{
-    width: 15rem;
-    height: 15rem;
-    float: right;
-    border-radius: 50%;
-    transform: translateX(30px) skew(12deg);
-    @media only screen and (max-width: 767.98px){
-      transform: translateX(30px) translateY(10px);
+    &__shape {
+        width: 15rem;
+        height: 15rem;
+        float: right;
+        shape-outside: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        transform: translateX(3rem) skewX(12deg);
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            clip-path: circle(50% at 50% 50%);
+            -webkit-clip-path: circle(50% at 50% 50%);
+            //border-radius:none;
+        }
+        @include respond(phone) {
+            transform: translateX(-3rem) skewX(0);
+        }
     }
-  }
-  &__text {
-    transform:skewX(12deg);
-    h3 {
-      text-align: center;
-      margin-bottom: 3rem;
-      font-weight: bold;
+    &__img {
+        width: 15rem;
+        height: 15rem;
+        float: right;
+        border-radius: 50%;
+        transform: translateX(30px) skew(12deg);
+        @media only screen and (max-width: 767.98px) {
+            transform: translateX(30px) translateY(10px);
+        }
     }
-    p {
-      text-align: right;
+    &__text {
+        transform: skewX(12deg);
+        h3 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: bold;
+        }
+        p {
+            text-align: right;
+        }
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
-    @include respond(phone){
-      transform:skewX(0);
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.7rem;
+        color: $white;
+        opacity: 0;
+        transition: all 0.5s;
+        backface-visibility: hidden;
     }
-  }
-  &__caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , 20%);
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.7rem;
-    color:$white;
-    opacity: 0;
-    transition: all 0.5s;
-    backface-visibility: hidden;
-  }
-  &:hover &__caption{
-    opacity: 1;
-    transform: translate(-50% , -50%);
-  }
-
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
 }
 .section-stories {
-  position: relative;
-  padding:15rem 0;
-  @include respond(tab-port){
-    padding: 10rem 0;
-  }
+    position: relative;
+    padding: 15rem 0;
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
 }
 .bg-video {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.15;
-  overflow: hidden;
-
-  &__content{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-  }
+    z-index: -1;
+    opacity: 0.15;
+    overflow: hidden;
+
+    &__content {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 }
