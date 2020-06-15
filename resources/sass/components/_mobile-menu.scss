@@ -1,16 +1,16 @@
 .mobile-menu{
-    width: 30%;
+    width: 60%;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0;
     background-color: $white;
     z-index: 100;
-    padding: 5rem 1.4rem 2rem 5rem;
+    padding: 7rem 1.4rem 2rem 1rem;
     transition: all 0.3s;
-    
+    text-align: right;
     &-hidden{
-        margin-right: -60rem;
+        margin-right: -100rem;
     }
     @include respond(md){
         width: 50%;
@@ -29,11 +29,15 @@
     .mobile-nav{
         &-item{
             text-transform: uppercase;
-            color:#fff;
-            margin-bottom: 2rem;
+            color:$primary-black;
             font-size:1.4rem;
             font-weight: 700;
             cursor: pointer;
+            padding: 1.5rem 0;
+            margin-bottom: 0;
+             &:not(:first-child) {
+                border-top: 1px solid #dee1ea;
+            }
         }
     }
 }
