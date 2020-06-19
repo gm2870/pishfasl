@@ -1,0 +1,44 @@
+.login-body {
+  padding-top: 2.75rem;
+  padding-left: 3.75rem;
+  padding-right: 3.75rem;
+
+}
+.login-header {
+  padding-top: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  padding-left: 2rem;
+  .close {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+  h3 {
+    flex: 1;
+  }
+}
+.input {
+  padding: 20px;
+  min-height: 30px;
+  border-radius: 25px;
+  border: 1px solid #ececec;
+  font-size: 15px;
+  text-align: right;
+}
+.form-actions {
+  display: flex;
+  flex-direction: column;
+  button {
+    background-color: $primary-blue;
+  }
+  a {
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+.login-submit {
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+}

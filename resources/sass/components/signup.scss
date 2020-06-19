@@ -1,0 +1,113 @@
+.wizard-card .tab-content {
+  min-height: 200px !important;
+  padding: 20px 15px;
+  .tab-pane {
+    .form-control {
+      width: 30%;
+      padding: 20px;
+      min-height: 30px;
+      border-radius: 25px;
+      border: 1px solid #ececec;
+      font-size: 15px;
+      text-align: right;
+    }
+  }
+
+}
+.wizard-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  h5 {
+    margin: 5px 0 0;
+  }
+  h3 {
+    flex: 1;
+  }
+  .close {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+  }
+}
+.wizard-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  input {
+    padding: .7rem 1.5rem;
+    font-size: 13px;
+    margin:0 1rem 0 .2rem;
+    color: $white ;
+  }
+}
+.title, .title a, .card-title, .card-title a, .wizard-title, .wizard-title a {
+  color: #3C4858;
+  text-decoration: none;
+}
+
+.wizard-container .wizard-navigation {
+  position: relative;
+}
+.nav-pills {
+  background-color: rgba(200, 200, 200, 0.2);
+}
+.nav-pills {
+  display: flex;
+  justify-content: center;
+  li {
+    pointer-events: none;
+    a {
+      outline: none;
+      border: 0 !important;
+      border-radius: 0;
+      line-height: 18px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 500;
+      min-width: 100px;
+      text-align: center;
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+      color:#555555;
+    }
+  }
+}
+.nav-pill-active {
+  background-color: $primary-blue;
+  border-radius: 4px;
+  a {
+    color:white !important
+  }
+}
+.wizard-card .moving-tab {
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
+  transform: translate3d(-8px, 0px, 0px); transition: transform 0s ease 0s;
+}
+//.wizard-card[data-color="red"] .moving-tab {
+//  background-color: #11b0de;
+//  box-shadow: 0 16px 26px -10px rgba(0, 123, 255, 0.5), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 123, 255, 0.25);
+//}
+
+.form-group-label {
+  line-height: 1.1 !important;
+  color:#3C4858 !important
+}
+.modal-lg {
+  @media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+      max-width: 900px;
+    }
+  }
+
+}

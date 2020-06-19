@@ -1,0 +1,44 @@
+.comment-container{
+  background-color: $white;
+  margin-top: 4rem;
+}
+.carousel{
+  &__header {
+    border-bottom:1px solid #d7d7d7;
+  }
+  &__title {
+      font-size: 18px;
+      padding: 10px 1px;
+      text-align: right;
+      &::after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        bottom: 3px;
+        right: 0;
+        border-left: 4px solid $primary-blue;
+        pointer-events: auto;
+        height: 20px;
+      }
+    }
+  &__body {
+    padding: 2rem 1rem;
+  }
+}
+.carousel-comment {
+  text-align: right;
+  .comment-image {
+    width: 10rem;
+    border-radius: 50%;
+  }
+  .comment-text {
+    margin-right: 5px;
+    text-align: right;
+  }
+  .comment-btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    margin: 4rem 2rem 2rem;
+    border-radius: 2.5rem;
+  }
+}

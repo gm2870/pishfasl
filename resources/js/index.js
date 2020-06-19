@@ -1,8 +1,6 @@
-import "jquery";
+import $ from "jquery";
 import "bootstrap";
 import "popper.js";
-
-
 
 import {elements} from './elements';
 // stick header after pageYOffset of 60
@@ -87,3 +85,4 @@ document.body.addEventListener('click', e => {
         targetElOffsetTop = document.querySelector(`#${target}`).offsetTop;
         scrollEvent(targetElOffsetTop);
     });
+

@@ -44,3 +44,9 @@ body {
 ul {
     list-style-type: none
 }
+button:active {
+    outline: none;
+}
+button:focus {
+    outline: none;
+}

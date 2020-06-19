@@ -38,7 +38,6 @@ img {
     line-height: 4;
     h1,p {
         color:$white;
-        text-shadow: 0 1px 1px;
     }
     p{
         font-size: 1.6rem;
@@ -53,7 +52,7 @@ img {
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
-        line-height: 2.5;
+        line-height: 2;
         right: unset;
     }
     h1 {
@@ -109,7 +108,6 @@ img {
 }
 .review {
     background-color:#fff;
-    box-shadow: var(--shadow-light);
     padding:3rem;
     margin-bottom: 3.5rem;
     position: relative;
@@ -185,24 +183,7 @@ img {
         object-fit: cover;
     }
 }
-.heading-component-title {
-    font-size: 18px;
-    border-bottom: 1px solid;
-    padding: 10px 1px;
-    border-bottom-color: #d7d7d7;
-    margin-left: 60px;
-    text-align: right;
-    &::after{
-        content: '';
-        position: absolute;
-        top: 10px;
-        bottom: 3px;
-        right: 0;
-        border-left: 4px solid $primary-blue;
-        pointer-events: auto;
-        height: 20px;
-    }
-}
+
 .descriptions {
     position: relative;
     padding: 10rem 0;

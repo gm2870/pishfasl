@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 export const elements = {
     header_navbar:document.querySelector("#header-navbar"),
     all_nav_links:document.querySelectorAll('.header-nav-link'),
@@ -12,5 +14,6 @@ export const elements = {
     portfolio_group_btns:document.querySelectorAll('.filter-group-btn'),
     filter_group:document.querySelector('.filter-group'),
     filter_bar_line:document.querySelector('.filter-bar-line'),
-    loader:document.querySelector('.loader')
+    loader:document.querySelector('.loader'),
+    navPills:document.querySelector('.nav-pills'),
 };

@@ -7,9 +7,9 @@
     font-size: 13px;
     transform: skewX(-12deg);
     @media only screen and (max-width: 767.98px) {
-        width: 95%;
-        padding-left: 5rem;
+        padding-left: 2rem;
         transform: skewX(0);
+        margin: 2rem;
     }
 
     &__shape {
