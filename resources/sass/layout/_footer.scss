@@ -5,8 +5,8 @@
         bottom: 4rem;
         border-radius: 3rem;
         padding: 1rem 4rem;
-        background-color: $primary-blue;
-        color: $white;
+        border:1px solid $primary-blue;
+        color: $primary-blue;
     }
     background-color: $secondary-black;
     padding: 6rem 0 5rem !important;
@@ -30,6 +30,9 @@
         padding: 6rem 0;
         &:focus {
             outline: none;
+        }
+        @media only screen and (max-width: 767.98px) {
+            font-size: 2.4rem;
         }
     }
     .form-group {

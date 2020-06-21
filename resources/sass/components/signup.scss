@@ -10,6 +10,9 @@
       border: 1px solid #ececec;
       font-size: 15px;
       text-align: right;
+      @media only screen and (max-width: 767.98px){
+        width: 50%;
+      }
     }
   }
 
@@ -18,7 +21,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 25px;
+  padding: 1rem 2.5rem;
   h5 {
     margin: 5px 0 0;
   }
@@ -93,6 +96,9 @@
   cursor: pointer;
   font-weight: 500;
   transform: translate3d(-8px, 0px, 0px); transition: transform 0s ease 0s;
+}
+.btn-previous {
+  color: #495057 !important;
 }
 //.wizard-card[data-color="red"] .moving-tab {
 //  background-color: #11b0de;

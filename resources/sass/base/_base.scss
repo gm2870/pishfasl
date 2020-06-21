@@ -50,3 +50,9 @@ button:active {
 button:focus {
     outline: none;
 }
+.input-error {
+    border: 1px solid #f61515 !important;
+}
+.red {
+    color: #f61515;
+}

@@ -30,12 +30,12 @@
         <li class="mobile-nav-item">درباره ما</li>
     </ul>
     <div class="d-flex justify-content-center">
-        <a href="" class="button login-btn">
+        <button type="button" class="button login-btn"  data-toggle="modal" data-target="#loginModal">
             ورود
-        </a>
-        <a href="" class="button signup-btn">
+        </button>
+        <button type="button" class="button signup-btn" data-toggle="modal" data-target="#signupModal">
             ثبت نام
-        </a>
+        </button>
     </div>
 </div>
 <div class="overlay overlay-hidden"></div>
@@ -137,7 +137,7 @@
             <h1>Engage Fans and Players</h1>
             <p>Websites, Stats, Registration and Apps for Leagues, Teams and Tournaments</p>
             <div>
-                <button class="btn btn-main mx-2">
+                <button class="btn btn-main mx-2"  data-toggle="modal" data-target="#signupModal">
                     ثبت نام
                 </button>
             </div>
@@ -243,10 +243,36 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/images/trophy.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-comment">
+                                <h1 class="mb-5">تیتر نظر مربی2</h1>
+                                <div class="row gutter pr-4">
+                                    <div class="">
+                                        <img class="comment-image" src="/public/images/user-1.jpg" alt="عکس مربی">
+                                    </div>
+                                    <div class="comment-text">
+                                        <blockquote class="no-mt">
+                                            <p class="no-mt">“این نظر مربی است.پیشفصل خیلی باحاله ”</p>
+                                        </blockquote>
+                                        <a href="" class="comment-btn btn btn-primary">تماشای ویدیو</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="./public/images/goalkeeper.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-comment">
+                                <h1 class="mb-5">تیتر نظر مربی2</h1>
+                                <div class="row gutter pr-4">
+                                    <div class="">
+                                        <img class="comment-image" src="/public/images/user-3.jpg" alt="عکس مربی">
+                                    </div>
+                                    <div class="comment-text">
+                                        <blockquote class="no-mt">
+                                            <p class="no-mt">“این نظر مربی است.پیشفصل خیلی باحاله ”</p>
+                                        </blockquote>
+                                        <a href="" class="comment-btn btn btn-primary">تماشای ویدیو</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -377,9 +403,7 @@
             <div class="col-lg-5 text-center text-sm-right">
                 <article class="footer-classic-info">
                     <div class="unit-right">
-                        <a class="brand brand-md" href=""><img class="brand-logo "
-                                                               src="./public/images/pishfasl.png" alt="لوگو"
-                                                               width="95" height="126"></a>
+                        <a class="brand brand-md" href=""><img class="brand-logo " src="./public/images/pishfasl.png" alt="لوگو"></a>
                     </div>
                     <div class="unit-body">
                         <p>Sportland website offers you the latest news about our team as well as updates on our
@@ -404,7 +428,7 @@
                                 </svg>
                             </div>
                             <div class="unit-body">
-                                <h6>به ما ملحق شو</h6><a class="link" href="mailto:#">email@gmail.com</a>
+                                <h4>به ما ملحق شو</h4><a class="link" href="mailto:#">email@gmail.com</a>
                             </div>
                         </div>
                     </li>
@@ -417,21 +441,11 @@
                                 </svg>
                             </div>
                             <div class="unit-body">
-                                <h6>تماس با ما</h6><a class="link" href="mailto:#">email@gmail.com</a>
+                                <h4>تماس با ما</h4><a class="link" href="mailto:#">email@gmail.com</a>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <div class="group-md group-middle">
-                    <div class="group-item">
-                        <ul class="list-inline list-inline-xs">
-                            <li><a class="icon icon-corporate fa fa-facebook" href="#"></a></li>
-                            <li><a class="icon icon-corporate fa fa-twitter" href="#"></a></li>
-                            <li><a class="ico0n icon-corporate fa fa-google-plus" href="#"></a></li>
-                            <li><a class="icon icon-corporate fa fa-instagram" href="#"></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
             <div class="col-lg-7">
                 <h5>اخبار محبوب</h5>
@@ -549,44 +563,39 @@
                                         <h4 class="text-center mt-3 mb-5">لطفا رشته و نوع حساب کاربری خود را تعیین
                                             کنید</h4>
                                     </div>
-                                    <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-sm-5 d-flex align-items-center justify-content-center mb-3">
                                         <h5 class="ml-2">رشته :</h5>
                                         <div class="form-group mx-1 my-0 d-flex">
-                                            <input class="mx-2" type="radio" name="field-type" id="footballRadio"
-                                                   value="option1" checked>
+                                            <input class="mx-2" type="radio" name="field-type" id="footballRadio" value="football">
                                             <label class="form-group-label" for="footballRadio">
                                                 فوتبال
                                             </label>
                                         </div>
                                         <div class="form-group mx-1 my-0">
-                                            <input class="mx-2" type="radio" name="field-type" id="futsalRadio"
-                                                   value="option1" checked>
+                                            <input class="mx-2" type="radio" name="field-type" id="futsalRadio" value="futsal">
                                             <label class="form-group-label" for="futsalRadio">
                                                 فوتسال
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 d-flex align-items-center justify-content-center">
+                                    <div class="col-sm-7 d-flex align-items-center justify-content-center mb-3">
                                         <h5 class="ml-2">حساب کاربری :</h5>
                                         <div class="form-group mx-1 my-0">
                                             <div class="form-check">
-                                                <input class="" type="radio" name="user-type" id="regular"
-                                                       value="regular" checked>
+                                                <input type="radio" name="user-type" id="regular" value="regular">
                                                 <label class="form-group-label" for="regular">
                                                     کاربر عادی
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="form-group mx-1 my-0">
-                                            <input class="" type="radio" name="user-type" id="player" value="player"
-                                                   checked>
+                                            <input type="radio" name="user-type" id="player" value="player">
                                             <label class="form-group-label" for="player">
                                                 بازیکن
                                             </label>
                                         </div>
                                         <div class="form-group mx-1 my-0">
-                                            <input class="" type="radio" name="user-type" id="coach" value="player"
-                                                   checked>
+                                            <input type="radio" name="user-type" id="coach" value="coach">
                                             <label class="form-group-label" for="coach">
                                                 مربی
                                             </label>
@@ -604,7 +613,7 @@
                                         شماره همراه
                                     </label>
                                     <input class="form-control mx-2" type="number" name="phone" id="phone"
-                                           placeholder="09xxxxxxxx" checked>
+                                           placeholder="09xxxxxxxx">
                                 </div>
                             </div>
                             <div class="tab-pane" id="security-code">
@@ -623,54 +632,52 @@
                                 <h4 class="text-center text-center mt-3 mb-5">لطفا اطلاعات خود را وارد کنید
                                 </h4>
                                 <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
+                                    <div class="form-group d-flex align-items-center w-50 pr-3 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="نام" type="text" name="code"
                                                id="name">
                                     </div>
-                                    <div class="form-group d-flex align-items-center justify-content-center w-50">
+                                    <div class="form-group d-flex align-items-center justify-content-center w-50 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="نام خانوادگی" type="text"
                                                name="last-name">
                                     </div>
                                 </div>
                                 <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
+                                    <div class="form-group d-flex align-items-center w-50 pr-3 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="سن" type="text" name="age"
                                                id="age">
                                     </div>
-                                    <div class="form-group d-flex align-items-center w-50 justify-content-center">
+                                    <div class="form-group d-flex align-items-center w-50 justify-content-center user-info">
                                         <input class="form-control mx-2 w-75" placeholder="ایمیل" type="email"
                                                name="email" id="email">
                                     </div>
                                 </div>
-                                <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
+                                <div class="form-row d-flex align-items-center user-info">
+                                    <div class="form-group d-flex align-items-center w-50 pr-3 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="رمز عبور" type="text"
                                                name="password" id="password">
                                     </div>
-                                    <div class="form-group d-flex align-items-center justify-content-center w-50">
+                                    <div class="form-group d-flex align-items-center justify-content-center w-50 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="تکرار رمز عبور" type="text"
                                                name="repeat-password" id="repeat-password">
                                     </div>
                                 </div>
-                                <div class="form-group d-flex align-items-center w-50 pr-3 mt-2">
-                                    <div class="form-check">
+                                <div class="form-group w-100 pr-3 mt-2">
+                                    <div class="form-group text-right">
                                         <input class="form-check-input" type="checkbox" id="advanced-checkbox">
                                         <label class="form-check-label mr-4" for="advanced-checkbox">
                                             مایل به ثبت نام پیشرفته هستم
                                         </label>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="advanced">
-                                <h4 class="text-center text-center mt-3 mb-5">اطلاعات تکمیلی
-                                </h4>
-                                <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
-                                        <input class="form-control mx-2 w-75" placeholder="نام" type="text" name="code">
-                                    </div>
-                                    <div class="form-group d-flex align-items-center justify-content-center w-50">
-                                        <input class="form-control mx-2 w-75" placeholder="نام خانوادگی" type="text"
-                                               name="last-name">
+                                    <div class="tab-pane" id="advanced" style="display:none;">
+                                        <div class="form-row d-flex align-items-center">
+                                            <div class="form-group d-flex align-items-center w-50 pr-3">
+                                                <input class="form-control mx-2 w-75" placeholder="نام" type="text" name="code">
+                                            </div>
+                                            <div class="form-group d-flex align-items-center justify-content-center w-50">
+                                                <input class="form-control mx-2 w-75" placeholder="نام خانوادگی" type="text"
+                                                       name="last-name">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -679,7 +686,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="user-agreement">
                                         <a href="#" class="form-check-label mr-4">
-                                            با قوانین موافقم
+                                            با شرایط و قوانین موافقم
                                         </a>
                                     </div>
                                 </div>
@@ -688,7 +695,7 @@
                         </div>
                         <div class="wizard-footer">
                             <div>
-                                <input data-step="0" type="button" class="btn btn-previous btn-warning btn-default btn-wd"
+                                <input disabled data-step="0" type="button" class="btn btn-previous btn-warning btn-default btn-wd"
                                        name="previous" value="مرحله قبل">
                             </div>
                             <div>
@@ -722,7 +729,7 @@
             </div>
             <div class="modal-body">
                 <div class="login-body">
-                    <form class="text-right">
+                    <form class="login-form text-right">
                         <div class="form-group">
                             <label for="username">نام کاربری(شماره تلفن همراه)</label>
                             <input type="number" id="username" class="input form-control">
