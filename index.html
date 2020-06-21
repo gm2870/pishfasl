@@ -551,16 +551,16 @@
                                     </div>
                                     <div class="col-sm-6 d-flex align-items-center justify-content-center">
                                         <h5 class="ml-2">رشته :</h5>
-                                        <div class="form-group mx-1 my-0 d-flex">
+                                        <div class="form-group mx-1 my-0 d-flex field-btns">
                                             <input class="mx-2" type="radio" name="field-type" id="footballRadio"
-                                                   value="option1" checked>
+                                                   value="football">
                                             <label class="form-group-label" for="footballRadio">
                                                 فوتبال
                                             </label>
                                         </div>
-                                        <div class="form-group mx-1 my-0">
+                                        <div class="form-group mx-1 my-0 field-btns">
                                             <input class="mx-2" type="radio" name="field-type" id="futsalRadio"
-                                                   value="option1" checked>
+                                                   value="futsal">
                                             <label class="form-group-label" for="futsalRadio">
                                                 فوتسال
                                             </label>
@@ -569,24 +569,23 @@
                                     <div class="col-sm-6 d-flex align-items-center justify-content-center">
                                         <h5 class="ml-2">حساب کاربری :</h5>
                                         <div class="form-group mx-1 my-0">
-                                            <div class="form-check">
+                                            <div class="form-check user-type-btn">
                                                 <input class="" type="radio" name="user-type" id="regular"
-                                                       value="regular" checked>
+                                                       value="regular">
                                                 <label class="form-group-label" for="regular">
                                                     کاربر عادی
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="form-group mx-1 my-0">
+                                        <div class="form-group mx-1 my-0 user-type-btn">
                                             <input class="" type="radio" name="user-type" id="player" value="player"
-                                                   checked>
+                                                   >
                                             <label class="form-group-label" for="player">
                                                 بازیکن
                                             </label>
                                         </div>
-                                        <div class="form-group mx-1 my-0">
-                                            <input class="" type="radio" name="user-type" id="coach" value="player"
-                                                   checked>
+                                        <div class="form-group mx-1 my-0 user-type-btn">
+                                            <input class="" type="radio" name="user-type" id="coach" value="coach">
                                             <label class="form-group-label" for="coach">
                                                 مربی
                                             </label>
@@ -623,31 +622,30 @@
                                 <h4 class="text-center text-center mt-3 mb-5">لطفا اطلاعات خود را وارد کنید
                                 </h4>
                                 <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
-                                        <input class="form-control mx-2 w-75" placeholder="نام" type="text" name="code"
-                                               id="name">
+                                    <div class="form-group w-50 pr-3 user-info">
+                                        <input class="form-control mx-2 w-75" placeholder="نام" type="text" name="code" id="name">
                                     </div>
-                                    <div class="form-group d-flex align-items-center justify-content-center w-50">
+                                    <div class="form-group w-50 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="نام خانوادگی" type="text"
                                                name="last-name">
                                     </div>
                                 </div>
                                 <div class="form-row d-flex align-items-center">
-                                    <div class="form-group d-flex align-items-center w-50 pr-3">
+                                    <div class="form-group w-50 pr-3 user-info">
                                         <input class="form-control mx-2 w-75" placeholder="سن" type="text" name="age"
                                                id="age">
                                     </div>
-                                    <div class="form-group d-flex align-items-center w-50 justify-content-center">
+                                    <div class="form-group user-info w-50">
                                         <input class="form-control mx-2 w-75" placeholder="ایمیل" type="email"
                                                name="email" id="email">
                                     </div>
                                 </div>
-                                <div class="form-row d-flex align-items-center">
+                                <div class="form-row user-info">
                                     <div class="form-group d-flex align-items-center w-50 pr-3">
                                         <input class="form-control mx-2 w-75" placeholder="رمز عبور" type="text"
                                                name="password" id="password">
                                     </div>
-                                    <div class="form-group d-flex align-items-center justify-content-center w-50">
+                                    <div class="form-group user-info w-50">
                                         <input class="form-control mx-2 w-75" placeholder="تکرار رمز عبور" type="text"
                                                name="repeat-password" id="repeat-password">
                                     </div>
@@ -677,7 +675,7 @@
                             <div class="tab-pane" id="submit">
                                 <div class="form-group d-flex align-items-center w-50 pr-3 mt-2">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="user-agreement">
+                                        <input class="form-check-input" type="checkbox">
                                         <a href="#" class="form-check-label mr-4">
                                             با قوانین موافقم
                                         </a>
