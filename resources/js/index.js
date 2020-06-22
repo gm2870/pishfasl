@@ -71,9 +71,9 @@ document.body.addEventListener("click", e => {
 
 elements.mobile_nav.on("click", e => {
     hideMobileMenu();
-
-    const target = $(e.target).html();
+    const target = $(e.target);
+    const hrefVal = target.attr("href");
     let targetElOffsetTop = 0;
-    targetElOffsetTop = $(`#${target}`).offset().top;
+    targetElOffsetTop = $(`${hrefVal}`).offset().top;
     scrollEvent(targetElOffsetTop);
 });
