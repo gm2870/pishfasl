@@ -10,7 +10,7 @@
     transition: all 0.3s;
     text-align: right;
     &-hidden{
-        margin-right: -100rem;
+        margin-right: -105rem;
     }
     @include respond(md){
         width: 50%;

@@ -1,26 +1,53 @@
 .story {
+    border: 1px solid $primary-blue;
+    box-shadow: 0 0 5px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    box-shadow: 0 3rem 6rem rgba($primary-black, 0.1);
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: $white;
     border-radius: 3px;
-    padding: 3rem 5rem;
+    padding: 3rem 2rem;
     font-size: 13px;
-    transform: skewX(-12deg);
+    flex-direction: column;
     @media only screen and (max-width: 767.98px) {
-        padding-left: 2rem;
+        padding:2rem 1rem;
         transform: skewX(0);
         margin: 2rem;
     }
+    &__header {
+        font-weight: bold;
+        text-align: center;
+    }
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        &:not(:last-child) {
+            margin-bottom: 7rem;
+        }
 
+        &--small {
+            border: 1px solid $primary-blue;
+            box-shadow: 0 0 5px;
+            height: 30%;
+            padding:2rem;
+            background-color: $white;
+            &:not(:last-child) {
+                margin-bottom: 2.7rem;
+            }
+        }
+    }
     &__shape {
         width: 15rem;
         height: 15rem;
         float: right;
         shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
-        transform: translateX(3rem) skewX(12deg);
+        transform: translateX(3rem);
         position: relative;
         overflow: hidden;
         border-radius: 50%;
@@ -30,20 +57,19 @@
             //border-radius:none;
         }
         @include respond(phone) {
-            transform: translateX(-3rem) skewX(0);
+            transform: translateX(-3rem);
         }
     }
     &__img {
         width: 9rem;
         height: 9rem;
         float: right;
-        transform: translateX(30px) skew(12deg);
         @media only screen and (max-width: 767.98px) {
-            transform: translateX(30px) translateY(10px);
         }
     }
     &__text {
-        transform: skewX(12deg);
+        padding: 0 2rem;
+        text-align: right;
         h3 {
             text-align: center;
             margin-bottom: 3rem;
@@ -51,9 +77,6 @@
         }
         p {
             text-align: right;
-        }
-        @include respond(phone) {
-            transform: skewX(0);
         }
     }
     &__caption {

@@ -6,6 +6,9 @@
   &__header {
     border-bottom:1px solid #d7d7d7;
   }
+  &-item {
+    max-height: 740px;
+  }
   &__title {
       font-size: 18px;
       padding: 10px 1px;

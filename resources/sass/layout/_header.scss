@@ -1,5 +1,8 @@
 header {
-    background-color: $white;
+    background-color: transparent;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
 }
 #header-navbar {
     @media only screen and (max-width: 1199.98px) {
@@ -10,7 +13,7 @@ header {
     margin-right: 0;
 }
 .header-nav-link {
-    color: $primary-black;
+    color: $white;
     font-size: 14px;
     padding-right: 1.2rem !important;
     padding-left: 1.2rem !important;

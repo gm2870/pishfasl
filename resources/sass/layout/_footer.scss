@@ -1,15 +1,76 @@
 .footer {
-    &__submit {
-        position: absolute;
-        left: 5rem;
-        bottom: 4rem;
-        border-radius: 3rem;
-        padding: 1rem 4rem;
-        border:1px solid $primary-blue;
-        color: $primary-blue;
+    background-color: #d7dee0;
+    padding: 6rem 0 1rem !important;
+
+    &__logo {
+        text-align: center;
     }
-    background-color: $secondary-black;
-    padding: 6rem 0 5rem !important;
+    .nav-link {
+        color: $light-black;
+        &:hover {
+            color: $primary-blue;
+        }
+    }
+    &__form {
+        margin-bottom: 3rem;
+    }
+    &__social {
+        text-align: right;
+        i {
+            color: $primary-blue;
+        }
+        h4{
+            @media only screen and (max-width: 767.98px) {
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+    }
+    &__navbar {
+
+    }
+    &__description {
+        text-align: right;
+    }
+    &__content {
+       h1{
+           margin-bottom: 1.5rem;
+           @media only screen and (max-width: 767.98px) {
+               text-align: center;
+               margin: 3rem 0;
+           }
+       }
+    }
+    &__copyright {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+    &__submit {
+        padding: 1rem 3rem;
+        color: $white;
+        font-size: 1.4rem;
+        background-color: $primary-blue;
+        border-radius:0 0 .25rem 0.25rem ;
+    }
+    &__navbar {
+        @media only screen and (max-width: 767.98px) {
+           justify-content: center;
+        }
+        .navbar-nav {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .nav-item{
+                margin: 0 1.5rem;
+                @media only screen and (max-width: 767.98px) {
+                    width: 10.5rem;
+                    text-align: center;
+                    margin: 1rem 1.5rem;
+                }
+            }
+        }
+    }
     .footer-classic-info {
         display: flex !important;
         .unit-right {
@@ -22,17 +83,22 @@
             margin-bottom: 3rem;
         }
     }
+    .form-label {
+        @media only screen and (max-width: 767.98px) {
+            text-align: center !important;
+            margin: 2rem;
+        }
+    }
     #footer-form-email {
-        font-size: 4.4rem;
-        background-color: transparent;
         font-weight: 500;
         border: none;
-        padding: 6rem 0;
+        padding: 2.2rem 1rem;
+        border-radius:0 0.25rem 0.25rem 0 !important;
         &:focus {
             outline: none;
         }
         @media only screen and (max-width: 767.98px) {
-            font-size: 2.4rem;
+            font-size: 1.3rem;
         }
     }
     .form-group {
@@ -41,26 +107,8 @@
     }
     .form-label {
         text-align: right;
-        color: $white;
+        color: $black;
         display: block;
-    }
-
-    .footer-submit-btn {
-        position: absolute;
-        left: 0;
-        color: white;
-    }
-    .form-wrap {
-        position: relative;
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 15px;
-            width: 100%;
-            border-bottom: 1px solid #151515;
-            border-bottom-color: rgba(255, 255, 255, 0.17);
-        }
     }
     h5 {
         color: $white;
@@ -68,10 +116,6 @@
         font-size: 18px;
         font-weight: bold;
     }
-    //article {
-    //  display: flex;
-    //  color: white;
-    //}
     ul.list-inline {
         display: flex;
         li {
@@ -106,36 +150,6 @@
                 }
             }
         }
-    }
-    .post-classic {
-        text-align: right;
-        display: flex;
-        &-aside {
-            align-self: center;
-        }
-        .badge {
-            padding: 7px 10px;
-            margin: 10px 0;
-        }
-        &-main {
-            padding-right: 1rem;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        &-title {
-            a {
-                color: $white;
-            }
-        }
-    }
-    time {
-        color: #9b9b9b;
-    }
-    .svg-color-primary {
-        width: 26px;
-        height: 26px;
-        fill: $primary-blue;
     }
     @media (min-width: 992px) {
         & {
